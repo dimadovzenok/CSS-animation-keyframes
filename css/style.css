@@ -1,0 +1,48 @@
+.box{
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border: 5px solid royalblue;
+}
+.example {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 200px;
+background-color: pink;
+animation: animation 2s ease-in 2s infinite alternate-reverse;
+}
+@keyframes animation{
+    0%{
+        top: 0px;
+        left: 0px;
+        background-color: pink;
+    }
+    25%{
+        top: 150px;
+        left: 0px;
+        background-color: yellow;
+        border-radius: 50%;
+    }
+    50%{
+        top: 200px;
+        left: 100px;
+        background-color: tomato;
+        border: 5px solid gray;
+        border-radius: 50%;
+    }
+    75%{
+        top: 250px;
+        left: 200px;
+        background-color: aquamarine;
+        border: 5px solid yellow;
+        border-radius: 50%;
+    }
+    100%{
+        top: 40px;
+        left: 0;
+        background-color: purple;
+        border-radius: 50%;
+    }
+}
